@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clothes_items",
+  "info": {
+    "name": "Clothes-Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "model": "category",
+      "via": "clothes_items"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "clothes_items"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "S": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sizes.size"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sizes_sizes",
+  "info": {
+    "name": "Size",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "S": {
+      "type": "boolean"
+    },
+    "M": {
+      "type": "boolean"
+    },
+    "L": {
+      "type": "boolean"
+    },
+    "XL": {
+      "type": "boolean"
+    },
+    "US9": {
+      "type": "boolean"
+    },
+    "US10": {
+      "type": "boolean"
+    },
+    "US11": {
+      "type": "boolean"
+    }
+  }
+}

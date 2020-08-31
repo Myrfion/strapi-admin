@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brands",
+  "info": {
+    "name": "Brand"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "clothes_items": {
+      "via": "brand",
+      "collection": "clothes-item"
+    }
+  }
+}

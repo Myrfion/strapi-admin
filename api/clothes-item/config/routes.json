@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clothes-items",
+      "handler": "clothes-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes-items/count",
+      "handler": "clothes-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clothes-items/:id",
+      "handler": "clothes-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clothes-items",
+      "handler": "clothes-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clothes-items/:id",
+      "handler": "clothes-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clothes-items/:id",
+      "handler": "clothes-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
